@@ -1,0 +1,175 @@
+\documentclass [12 pt ,a4 paper]{article}
+\usepackage [utf 8]{inputenc}
+\usepackage [portuguese]{babel}
+\usepackage {booktabs, longtable, graphicx, hyperref}
+\usepackage {geometry}
+\usepackage {float}
+\usepackage {hyperref}
+\usepackage {url}
+\geometry {margin=2.5cm}
+% METADADOS -- preencher obrigatoriamente
+\newcommand {\projetotitulo}{Introdução à Manufatura Aditiva}
+\newcommand {\grupoid}{Grupo Manufatura Aditiva}
+\newcommand {\sprintnum}{1}
+\newcommand {\sprintperiodo}{27/04 a 10/05/2026}
+\newcommand {\scrummaster}{Lucas Moura}
+\newcommand {\gitrepo}{https://github.com/viniciusnovelo/Introducao-a-Manufatura-Aditiva}
+\newcommand {\gitcommit}{abc 1234} % hash do commit desta entrega
+\begin {document}
+\begin {center}
+{\Large \bfseries Relatorio de Sprint \sprintnum}\\
+{\large \projetotitulo }\\
+\grupoid {} | \sprintperiodo {} | SM : \scrummaster
+\end {center}
+\section{Sprint Backlog}
+% Tabela: ID | Historia | Estimativa | Responsavel | Status
+\begin{longtable}{%
+    c
+    p{6.8cm}
+    p{2cm}
+    p{2.8cm}
+    p{1.8cm}
+}
+\toprule
+\textbf{ID} & \textbf{Historia} & \textbf{Estimativa} & \textbf{Responsavel} & \textbf{Status} \\
+\midrule
+\endhead % Isso faz o cabeçalho se repetir caso a tabela vá para a próxima página
+
+1 & Criação do Instagram para Divulgação & Sprint 1 & Lucas Moura & Concluido \\
+\midrule
+2 & Criação do formulario de divulgação & Sprint 1 & Vinicius Vilela & Concluido \\
+\midrule
+3 & Início da divulgação para alunos de escolas públicas. & Sprint 1 & Vinicius Vilela & Concluido \\
+\midrule
+4 & Criação de slides para as aulas de SolidEdge para os calouros & Sprint 1 & Paulo Arthur & Concluido \\
+\midrule
+5 & Coleta e organização de dados das inscrições dos alunos. & Sprint 1 & Paulo Arthur & Concluido \\
+\midrule
+6 & Agendamento das salas e laboratorios que serão utilizados & Sprint 1 & Leonardo Oliveita & Concluido \\
+\midrule
+7 & Verificação e manutenção das impressoras 3D e softwares no laboratório. & Sprint 1 & Yuri Mendonça & Concluido \\
+\midrule
+8 & Criação de relatorio de Sprint 1 & Sprint 1 & Lucas Leão & Concluido \\
+\midrule
+9 & Treinamento da equipe nas ferramentas e conhecimentos que serão utilizados & Sprint 1 e 2 & Lucas Moura & Em andamento \\
+\midrule
+10 & Elaboração dos slides das aulas do curso & Sprint 2 & Equipe & Em andamento \\
+\midrule
+11 & Realização da aula 1 & Sprint 2 & A definir & Backlog \\
+\midrule
+12 & Realização da aula 2 & Sprint 2 & A definir & Backlog \\
+\midrule
+13 & Criação de relatorio de Sprint 2 & Sprint 2 & Lucas Leão & Backlog \\
+\midrule
+14 & Realização da aula 3 & Sprint 3 & A definir & Backlog \\
+\midrule
+15 & Realização da aula 4 & Sprint 3 & A definir & Backlog \\
+\midrule
+16 & Criação de relatorio de Sprint 3 & Sprint 3 & Lucas Leão & Backlog \\
+\midrule
+17 & Realização da aula 5 & Sprint 4 & A definir & Backlog \\
+\midrule
+18 & Realização da aula 6 & Sprint 4 & A definir & Backlog \\
+\midrule
+19 & Criação de relatorio de Sprint 4 & Sprint 4 & Lucas Leão & Backlog \\
+\midrule
+20 & Criação de formulario para coleta de feedback & Sprint 5 & A definir & Backlog \\
+\midrule
+21 & Coleta de feedback dos alunos atraves de formulario & Sprint 5 & A definir & Backlog \\
+\midrule
+22 & Criação de relatorio de Sprint 5 & Sprint 5 & Lucas Leão & Backlog \\
+\midrule
+23 & Criação do relatorio final & Sprint 5 & A definir & Backlog \\
+\bottomrule
+\end{longtable}
+\section {Burndown Chart}
+\begin {figure}[h !]
+\centering
+Disciplina de Extensão — Engenharia de Controle e Automação
+\includegraphics[width=1.0\textwidth]{Imagens/burndown_sprint 1.png}
+\caption {Burndown -- Sprint \sprintnum}
+\end {figure}
+% Analise do burndown ( minimo 3 linhas ) :
+O gráfico acima representa o engajamento e o trabalho efetivo realizado pelo grupo durante o Sprint 1, sendo a linha azul (pontos ideais) representando o progresso ideal do projeto no decorrer de cada dia e a linha laranja (pontos restantes) o progresso realizado efetivamente das atividades propostas.
+
+\section {Artefatos Produzidos}
+
+\begin{itemize}
+    \item \textbf{Post de divulgação:} Foi criado um post para divulgação do curso e sua proposta, juntamente com um formulário de inscrição para os interessados.
+    \begin {figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Imagens/Post_instagram.png}
+    \caption {Post de divulgação}
+    \end {figure}
+\end{itemize}
+
+\begin{itemize}
+    \item \textbf{Formulário de inscrição:} Foi elaborado um formulário através da ferramenta do google (forms) para registrar todas as inscrições:\ \href{https://docs.google.com/forms/d/e/1FAIpQLScpw6IRuw41kQKG4KB8G6194GoOyiRwb0BRYA0sP2GroqB2fA/viewform?usp=sharing&ouid=110477629898304466412}{Formulário de inscrições} 
+    \item \textbf{Grupo com alunos:} Após a seleção de todos os participantes, um grupo com todos os alunos foi criado para divulgar demais informações a respeito do curso, além de compartilhar posteriormente todos os materiais didáticos desenvolvidos.
+    \begin {figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Imagens/evidencia_grupo.png}
+    \caption {Grupo de Whatsapp}
+    \end {figure}
+    \item \textbf{Apostila de modelagem 3D:} Uma apostila de modelagem 3D com Solid Edge foi desenvolvida para auxiliar no aprendizado do software pelos alunos.
+    \begin {figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Imagens/evidencia_apostila de modelagem.png}
+    \caption {Grupo de Whatsapp}
+    \end {figure}
+\end{itemize}
+
+% Descrever com evidencias
+\section {Atualização com o Parceiro}
+
+O contato inicial com os parceiros foi realizado no dia 27/04, e no decorrer da semana, através de divulgação do curso por diferentes meios de comunicação, sendo eles: grupos de divulgação do próprio IFMG, posts no instagram e contato direto em escola pública de ensino médio ().
+
+As divulgações tinham como objetivo apresentar a proposta do projeto ao público externo e o formulário de inscrições, realizado via ferramento do google (forms).
+
+O formulário ficou aberto entre o dia 27/04 e o dia 06/05, quando encerrado o período de inscrições, obtivemos um número total de 63 inscritos. Após este período, realizamos um filtro entre todos os selecionados para um número total de 30 alunos (quantidade máxima de computadores no laboratório) e criamos um grupo no whatsapp com todos os alunos, onde divulgamos todas as informações para início efetivo das aulas.
+
+Vale ressaltar que alguns dos alunos incialmente escolhidos sinalizaram desistência ou indisponibilidade quando contatados, dessa forma, outros candidatos foram escolhidos dentre os excedentes e as vagas foram preenchidas.
+
+
+% Data , formato e feedback
+\section {Participação do Calouro}
+
+No decorrer do primeiro Sprint, demais calouros manifestaram interesse em participar do projeto e foram incluídos no workload. Dessa forma nosso projeto conta atualmente com a participação de 4 calouros, sendo eles:
+
+\begin{itemize}
+    \item \textbf{Isaque Victor}
+    \item \textbf{Otávio Silva}
+    \item \textbf{Camilla}
+    \item \textbf{Mateus}
+\end{itemize}
+
+Durante o período da Sprint 1, todos os calouros participaram de aulas de capacitação referentes à prática de modelagem 3D e utilização das ferramentas do software de desenho Solidge Edge, com o intuito de preparação para ministrar as aulas com os parceiros.
+
+Os mesmos também auxiliaram no desenvolvimento da apostila de modelagem com Solid Edge.
+
+
+% Atividade realizada ou justificativa de ausencia
+\section {Impedimentos e Desvios}
+
+\begin{itemize}
+    \item \textbf{Alto número de inscrições:} Após a divulgação do formulário no instagram, um alto número de pessoas se inscreveram rapidamente, algo que não era esperado incialmente, o que levou ao encerramento das inscrições de forma precoce e à limitação da participação de todos os interessados.
+    \item \textbf{Falta de material para o curso:} O curso proposto, por sua natureza, exige a utilização de impressoras 3D para desenvolvimento prático das peças. Entretanto, o corpo doscente responsável por tais equipamentos informou ao grupo que a quantidade de filamento disponível para impressão estava baixo, podendo impactar o projeto.
+\end{itemize}
+
+
+\section {Retrospectiva}
+\subsection {O que funcionou bem}
+As aulas de capacitação foram muito bem elaboradas e auxiliaram no desenvolvimento das habilidades necessárias por parte dos calouros e dos demais integrantes do grupo.
+Além disso, a organização e administração do projeto fluiu de forma rápida e eficaz.
+\subsection {O que precisa melhorar}
+O engajamento geral do grupo no projeto ainda está lento e desequilibrado, sendo necessário melhor divisão das tarefas e entendimento das prioridades de cada indivíduo.
+\subsection {Ação concreta para a proxima sprint}
+Realizar alinhamentos internos recorrentes com definição detalhada de cada atividade que deve ser desenvolvida e seus respectivos responsáveis, sendo o progresso individual verificado pelo líder do projeto.
+
+\section {Planejamento da Próxima Sprint}
+
+A Sprint 2 terá como objetivo central finalizar a capacitação dos calouros e demais membros do grupo na utilização e manejo das impressoras 3D, além da finalização de toda documentação necessária para ministrar as aulas, sendo estas: Apostila de impressão 3D e slides para introdução do curso e conceitos teóricos.
+
+Ademais, a próxima Sprint dará início a primeira aula do curso, que será adiantada para melhor aproveitamento do tempo disponível. Com o intuito de possibilitar possíveis remanejos de datas das aulas que se seguirão.
+
+\end {document}
