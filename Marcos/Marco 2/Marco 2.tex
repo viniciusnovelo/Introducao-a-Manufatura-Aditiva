@@ -1,0 +1,168 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{float}
+\geometry{margin=2.5cm}
+
+% --- DADOS DO GRUPO ---
+\newcommand{\projetotitulo}{Introdução à Manufatura Aditiva}
+
+\begin{document}
+
+\begin{center}
+    {\Large\bfseries Marco 2 --- Product Backlog e Plano de Sprint}\\
+\end{center}
+
+\section{Product Backlog Priorizado}
+Este backlog contém as histórias de usuário necessárias para o desenvolvimento do minicurso, estimadas utilizando a sequência de Fibonacci e priorizadas pelo método MoSCoW.
+
+\begin{longtable}{lp{9cm}cc}
+\toprule
+\textbf{ID} & \textbf{História de Usuário (User Story)} & \textbf{Prioridade} & \textbf{Estimativa} \\
+\midrule
+H01 & Como instrutor, quero definir o conteúdo de SolidEdge para nivelar a turma. & Must & 3 \\
+H02 & Como aluno, quero aprender extrusão para criar volumes simples. & Must & 5 \\
+H03 & Como aluno, quero entender o fatiamento no Cura para gerar o G-code. & Must & 3 \\
+H04 & Como organizador, quero criar um formulário de inscrição para as vagas. & Must & 2 \\
+H05 & Como instrutor, quero selecionar modelos 3D de teste para a aula. & Should & 3 \\
+H06 & Como aluno, quero aprender a trocar o filamento da impressora. & Should & 2 \\
+H07 & Como organizador, quero produzir material gráfico para divulgação. & Must & 5 \\
+H08 & Como aluno, quero aprender comandos de "Revolve" no SolidEdge. & Should & 5 \\
+H09 & Como instrutor, quero criar um guia de "Erros Comuns" de impressão. & Should & 8 \\
+H10 & Como aluno, quero imprimir uma peça funcional para validar o curso. & Must & 13 \\
+H11 & Como instrutor, quero configurar perfis de economia de material no fatiador. & Must & 5 \\
+H12 & Como organizador, quero emitir certificados de conclusão para os alunos. & Could & 5 \\
+H13 & Como aluno, quero aprender o nivelamento manual da mesa da impressora. & Should & 3 \\
+H14 & Como instrutor, quero gravar vídeos de apoio para consulta pós-curso. & Won't & 13 \\
+H15 & Como organizador, quero coletar feedback para melhoria da próxima edição. & Should & 2 \\
+\bottomrule
+\caption{Backlog Geral do Projeto}
+\end{longtable}
+
+\section{Definition of Done (DoD)}
+Uma tarefa só será considerada concluída se atender aos seguintes critérios:
+\begin{enumerate}
+    \item Documentação LaTeX compilada e sem erros de sintaxe.
+    \item Arquivos de mídia (fotos/modelos 3D) carregados no repositório Git.
+    \item Revisão por pares: Pelo menos um outro integrante do grupo deve validar a entrega.
+    \item O código ou material produzido deve estar acessível via link no repositório oficial.
+    \item O resultado final deve efetivamente solucionar a tarefa proposta.
+\end{enumerate}
+
+\section{Cronograma atualizado}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l c p{6cm} p{4cm}}
+\toprule
+\textbf{Sprint} & \textbf{Semanas} & \textbf{Foco Principal} & \textbf{Marco de Entrega} \\
+\midrule
+
+Sprint 0 & 1--2 & Kickoff, diagnóstico, formação dos grupos & Marco 1: Termo de Abertura \\
+
+Sprint 1 & 3--4 & Backlog, capacitação e planejamento & Marco 2: Product Backlog + Plano \\
+
+Sprint 2 & 5--6 & Preparação das aulas, criação de slides e início da divulgação & Relatório de Sprint 2 \\
+
+Sprint 3 & 7--8 & Coleta de dados dos alunos, definição de espaço e equipamentos & Relatório de Sprint 3 \\
+
+Revisão & 9 & Sprint Review + Retrospectiva de meio de semestre & Apresentação interna \\
+
+Sprint 4 & 10--11 & Realização das primeiras 2 aulas & Relatório de Sprint 4 \\
+
+Sprint 5 & 12--13 & Realização das 2 aulas intermediárias & Relatório de Sprint 5 \\
+
+Sprint 6 & 14--15 &  Realização das últimas 2 aulas e coleta de dados de satisfação dos alunos, Finalização e documentação & Marco 3: Relatório Final \\
+
+Encerramento & 16 & Feira de Extensão (apresentação pública) & Marco 4: Apresentação Final \\
+
+\bottomrule
+\end{tabular}
+\caption{Planejamento de Sprints}
+\end{table}
+
+\section{Plano das Sprints 2 e 3}
+\subsection{Sprint 2}
+\textbf{Período: Semanas 5-6} \sprintperiodo \\
+
+\subsubsection{Meta da Sprint 2}
+A meta principal desta sprint é preparar todo o conteúdo que será apresentado aos alunos durante as aulas do minicurso.
+
+\subsubsection{Sprint 2 Backlog (Itens em Execução)}
+\begin{itemize}
+    \item \textbf{ID H01:} Definição do conteúdo do SolidEdge que será apresentado (Responsável: Yuri/Lucas Moura).
+    \item \textbf{ID H05:} Seleção de modelos 3D (Responsável: Leonardo Oliveira).
+    \item \textbf{ID H09:} Definição dos principais erros durante a impressão (Responsáveis: Vinícius Vilela).
+\end{itemize}
+
+\subsection{Sprint 3}
+\textbf{Período: Semanas 7-8} \sprintperiodo \\
+
+\subsubsection{Meta da Sprint 3}
+A meta principal desta sprint é organizar todos os alunos que irão efetivamente participar do curso e definir o espaço e os equipamentos que serão utilizados.
+
+\subsubsection{Sprint 3 Backlog (Itens em Execução)}
+\begin{itemize}
+    \item \textbf{ID H01:} Definição do laboratório que será utilizado (Responsável: Leonardo Oliveira).
+    \item \textbf{ID H11:} Definição da impressora que será utilizada em aula (Responsável: Paulo Arthur).
+\end{itemize}
+
+\section{Matriz de riscos atualizada}
+
+\subsection{Risco 1: Falhas de impressão devido às propriedades do filamento ABS}
+\begin{itemize}
+    \item \textbf{Probabilidade:} Alta
+    \item \textbf{Impacto:} Médio
+    \item \textbf{Descrição:} O filamento ABS exige um controle térmico rigoroso. Há um risco considerável de as peças sofrerem contração durante o resfriamento, resultando em descolamento da mesa de impressão (warping) ou rachaduras entre as camadas depositadas, gerando perda de material e necessidade de reimpressão.
+    \item \textbf{Estratégias de Mitigação:} Incluir no escopo das aulas práticas orientações específicas sobre os parâmetros de fatiamento (como a obrigatoriedade do uso de brim ou raft). Além disso, utilizar impressoras 3D com gabinete fechado para manter a temperatura do ambiente controlada e aplicar adesivos de fixação na mesa de impressão.
+\end{itemize}
+
+\subsection{Risco 2: Gargalo logístico e filas de espera na etapa de impressão}
+\begin{itemize}
+    \item \textbf{Probabilidade:} Média
+    \item \textbf{Impacto:} Alto
+    \item \textbf{Descrição:} O processo de deposição FDM é naturalmente lento. Se os alunos projetarem peças muito grandes ou volumosas, ou se todos finalizarem a etapa de desenho no SolidEdge ao mesmo tempo, haverá uma fila de impressão que pode ultrapassar o prazo do curso, impedindo que todos vivenciem a etapa final de ``testar'' a peça.
+    \item \textbf{Estratégias de Mitigação:} Estabelecer regras rígidas de dimensionamento e volume máximo para as peças já na fase de desenho. Configurar parâmetros obrigatórios de baixo preenchimento interno (infill) para agilizar a fabricação de protótipos e organizar um cronograma logístico de ``fornadas'', agrupando várias peças de alunos diferentes em uma mesma impressão.
+\end{itemize}
+
+\subsection{Risco 3: Curva de aprendizado prolongada no software SolidEdge}
+\begin{itemize}
+    \item \textbf{Probabilidade:} Baixa
+    \item \textbf{Impacto:} Baixo
+    \item \textbf{Descrição:} Como a turma pode ter diferentes níveis de familiaridade com computação e desenho técnico, alguns alunos podem apresentar lentidão para dominar o SolidEdge, atrasando o início da sua etapa de impressão em relação ao restante da turma.
+    \item \textbf{Estratégias de Mitigação:} Disponibilizar tutoriais complementares de apoio (vídeos ou apostilas curtas) focados apenas nas ferramentas básicas que serão efetivamente usadas no projeto. Promover o trabalho em pares ou grupos nas primeiras aulas para que os alunos com maior facilidade auxiliem os colegas.
+\end{itemize}
+
+\subsection{Risco 4: Evasão ou desinteresse ao longo dos módulos}
+\begin{itemize}
+\item \textbf{Probabilidade:} Média
+\item \textbf{Impacto:} Médio
+\item \textbf{Descrição:} Por tratar-se de uma atividade de extensão, muitas vezes extracurricular, existe o risco de os alunos abandonarem o curso diante de dificuldades técnicas no SolidEdge ou por falta de tempo. Uma alta taxa de evasão compromete os indicadores de sucesso do projeto e o aproveitamento das vagas oferecidas.
+\item \textbf{Estratégias de Mitigação:} Aplicar metodologias ativas de aprendizagem, como o \textit{Project-Based Learning} (PBL), permitindo que os alunos modelem objetos de interesse pessoal. Além disso, criar um grupo de comunicação rápida (ex: WhatsApp ou Discord) para sanar dúvidas pontuais e manter o engajamento entre os encontros presenciais.
+\end{itemize}
+
+\subsection{Risco 5: Incompatibilidade ou falhas na infraestrutura de TI}
+\begin{itemize}
+\item \textbf{Probabilidade:} Baixa
+\item \textbf{Impacto:} Muito Alto
+\item \textbf{Descrição:} O SolidEdge exige requisitos de hardware específicos (processamento e memória RAM). Falhas na rede local ou lentidão nos computadores do laboratório podem impossibilitar a execução das aulas práticas, travando o cronograma de modelagem.
+\item \textbf{Estratégias de Mitigação:} Realizar uma conferência técnica prévia em todas as máquinas do laboratório para validar licenças e desempenho. Manter uma versão de software de modelagem via \textit{browser} (como o Onshape) como plano de contingência caso o software principal apresente falhas críticas de sistema durante o curso.
+\end{itemize}
+
+\section{Link do Quadro Kanban}
+https://trello.com/invite/b/69ec29f2cbadeced1eb28ab9/ATTI23319baa813331b18382de79880124f8ACFA64AE/introducao-a-manufatura-aditiva
+
+\section{Métricas de Sucesso}
+\begin{itemize}
+    \item \textbf{Taxa de Retenção:} Percentual de alunos que concluíram o curso em relação aos matriculados (Meta: $> 60\%$).
+    \item \textbf{Taxa de Sucesso de Impressão:} Percentual de peças impressas corretamente na primeira tentativa (Meta: $> 70\%$).
+    \item \textbf{Índice de Autonomia:} Avaliação da capacidade dos alunos em operar o software e hardware com mínima assistência.
+    \item \textbf{Nível de Satisfação:} Média das avaliações coletadas via formulário de feedback ao final do curso.
+\end{itemize}
+
+\end{document}
