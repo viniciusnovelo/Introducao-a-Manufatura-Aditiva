@@ -1,0 +1,185 @@
+\documentclass[12pt,a4paper]{article}
+
+% Codificação e idioma
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+% Pacotes úteis
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{float}
+
+% Margens
+\geometry{margin=2.5cm}
+
+
+\newcommand{\projetotitulo}{Introdução à Manufatura Aditiva}
+\newcommand{\grupoid}{Grupo Manufatura Aditiva}
+\newcommand{\sprintnum}{3}
+\newcommand{\sprintperiodo}{25/05 a 07/06/2026}
+\newcommand{\scrummaster}{Lucas Moura}
+\newcommand{\gitrepo}{https://github.com/viniciusnovelo/Introducao-a-Manufatura-Aditiva}
+\newcommand{\gitcommit}{} % hash do commit desta entrega
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Relatório de Sprint \sprintnum}\\
+{\large \projetotitulo}\\
+\grupoid{} \ | \ \sprintperiodo{} \ | \ SM: \scrummaster
+\end{center}
+
+\section{Sprint Backlog}
+
+\begin{longtable}{|c|p{3.8cm}|p{1.9cm}|p{2.2cm}|p{1.7cm}|p{4.2cm}|}
+\toprule
+ID & História & Estimativa & Responsável & Status & Critério de Aceitação \\
+\midrule
+1 & Criação do Instagram para Divulgação & Sprint 1 & Lucas Moura & Concluído & Perfil criado, configurado com identidade visual do projeto e contendo ao menos uma publicação inicial. \\ \hline
+
+2 & Criação do formulário de divulgação & Sprint 1 & Vinícius & Concluído & Formulário criado, testado e apto para receber inscrições dos participantes. \\ \hline
+
+3 & Início da divulgação para comunidade interna e externa & Sprint 1 & Vinícius & Concluído & Divulgação realizada em ao menos uma escola ou meio de comunicação definido pela equipe. \\ \hline
+
+4 & Criação de slides para as aulas de SolidEdge para os calouros & Sprint 1 & Paulo & Concluído & Slides elaborados e revisados pela equipe antes da aplicação das aulas. \\ \hline
+
+5 & Criação do quadro Kanban & Sprint 1 & Lucas Leão & Concluído & Quadro criado contendo colunas de acompanhamento e tarefas cadastradas. \\ \hline
+
+6 & Coleta e organização de dados das inscrições dos alunos & Sprint 1 & Paulo & Concluído & Dados armazenados e organizados em planilha. \\ \hline
+
+7 & Agendamento das salas e laboratórios que serão utilizados & Sprint 1 & Leonardo & Concluído & Reservas confirmadas junto à instituição para todas as aulas previstas. \\ \hline
+
+8 & Verificação e manutenção das impressoras 3D e softwares no laboratório & Sprint 1 & Yuri & Concluído & Equipamentos testados e softwares funcionando corretamente antes do início do curso. \\ \hline
+
+9 & Criação de relatório de Sprint 1 & Sprint 1 & Lucas Leão & Concluído & Relatório elaborado contendo atividades realizadas, resultados e pendências. \\ \hline
+
+10 & Criação do repositório no Github & Sprint 1 & Vinícius & Concluído & Repositório criado com acesso para a equipe e estrutura inicial organizada. \\ \hline
+
+11 & Treinamento da equipe nas ferramentas de modelagem 3D & Sprint 1 e 2 & Lucas Moura & Concluído & Equipe capacitada para executar operações básicas de modelagem no software. \\ \hline
+
+12 & Elaboração dos materiais para as aulas 1 e 2 do curso & Sprint 2 & Equipe & Concluído & Materiais preparados e revisados antes da realização das aulas. \\ \hline
+
+13 & Realização da aula 1 & Sprint 2 & Equipe & Concluído & Aula ministrada conforme cronograma e com registro de presença dos alunos. \\ \hline
+
+14 & Realização da aula 2 & Sprint 2 & Equipe & Concluído & Aula ministrada conforme cronograma e com registro de presença dos alunos. \\ \hline
+
+15 & Criação de relatório de Sprint 2 & Sprint 2 & Leonardo, Paulo, Yuri & Concluído & Relatório elaborado contendo atividades realizadas, resultados e pendências. \\ \hline
+
+16 & Atualização do quadro Kanban & Sprint 2 & Lucas Leão & Concluído & Todas as tarefas da sprint atualizadas conforme o andamento das atividades. \\ \hline
+
+17 & Atualização do repositório Github & Sprint 2 & Vinícius & Concluído & Materiais e documentos da sprint enviados e organizados no repositório. \\ \hline
+
+18 & Treinamento da equipe nas ferramentas de impressão 3D & Sprint 3 & Lucas Moura & Não iniciado & Equipe apta a operar as impressoras e configurar impressões básicas. \\ \hline
+
+19 & Elaboração dos materiais para as aulas 3 e 4 do curso & Sprint 3 & Equipe & Concluído & Materiais preparados e aprovados pela equipe antes das aulas. \\ \hline
+
+20 & Realização da aula 3 & Sprint 3 & Equipe & Concluído & Aula ministrada conforme cronograma e com registro de presença dos alunos. \\ \hline
+
+21 & Criação de relatório de Sprint 3 & Sprint 3 & Leonardo, Paulo, Yuri & Concluído & Relatório elaborado contendo atividades realizadas, resultados e pendências. \\ \hline
+
+22 & Atualização do quadro Kanban & Sprint 3 & Lucas Leão & Não iniciado & Todas as tarefas da sprint atualizadas conforme o andamento das atividades. \\ \hline
+
+23 & Atualização do repositório Github & Sprint 3 & Vinícius & Em andamento & Materiais e documentos da sprint enviados e organizados no repositório. \\ \hline
+
+24 & Elaboração dos materiais para as aulas 5 e 6 do curso & Sprint 4 & Lucas Moura & Não iniciado & Materiais finalizados, revisados e disponíveis para aplicação das aulas. \\ \hline
+
+25 & Realização da aula 4 & Sprint 4 & Equipe & Não iniciado & Aula ministrada conforme cronograma e com registro de presença dos alunos. \\ \hline
+
+26 & Realização da aula 5 & Sprint 4 & Equipe & Não iniciado & Aula ministrada conforme cronograma e com registro de presença dos alunos. \\ \hline
+
+27 & Criação de relatório de Sprint 4 & Sprint 4 & Leonardo, Paulo, Yuri & Não iniciado & Relatório elaborado contendo atividades realizadas, resultados e pendências. \\ \hline
+
+28 & Atualização do quadro Kanban & Sprint 4 & Lucas Leão & Não iniciado & Todas as tarefas da sprint atualizadas conforme o andamento das atividades. \\ \hline
+
+29 & Atualização do repositório Github & Sprint 4 & Vinícius & Não iniciado & Materiais e documentos da sprint enviados e organizados no repositório. \\ \hline
+
+30 & Realização da aula 6 & Sprint 5 & Equipe & Não iniciado & Aula final realizada e conteúdo previsto concluído. \\ \hline
+
+31 & Criação de formulário para coleta de feedback & Sprint 5 & Leonardo, Yuri & Não iniciado & Formulário criado contendo perguntas objetivas e discursivas sobre o curso. \\ \hline
+
+32 & Coleta de feedback dos alunos através de formulário & Sprint 5 & Leonardo, Yuri & Não iniciado & Respostas coletadas de parte significativa dos participantes do curso. \\ \hline
+
+33 & Criação de relatório de Sprint 5 & Sprint 5 & Leonardo, Paulo, Yuri & Não iniciado & Relatório elaborado contendo atividades realizadas, resultados e pendências. \\ \hline
+
+34 & Atualização do quadro Kanban & Sprint 5 & Lucas Leão & Não iniciado & Todas as tarefas da sprint atualizadas conforme o andamento das atividades. \\ \hline
+
+35 & Atualização do repositório Github & Sprint 5 & Vinícius & Não iniciado & Materiais e documentos da sprint enviados e organizados no repositório. \\ \hline
+
+36 & Criação do relatório final & Sprint 5 & A definir & Não iniciado & Relatório final concluído contendo descrição completa do projeto, resultados e conclusões. \\
+
+\bottomrule
+\end{longtable}
+
+\section{Burndown Chart}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.0\textwidth]{Imagens/burndown_sprint\sprintnum.png}}
+\caption{Burndown -- Sprint \sprintnum}
+\end{figure}
+
+% Análise do burndown (mínimo 3 linhas):
+O gráfico acima representa o engajamento e o trabalho efetivo realizado pelo grupo durante a Sprint 3, sendo que a linha azul representa o progresso ideal no decorrer de cada dia e a linha laranja o progresso realizado efetivamente. Para cada atividade da Sprint 3 foi atribuído um valor de esforço representado no eixo vertical do gráfico, além disso, nessa Sprint duas atividades planejadas não foram concluídas.
+
+\section{Artefatos Produzidos}
+
+Em continuidade aos materiais desenvolvidos nas semanas anteriores, realizou-se a confecção de slides para o uso durante as aulas 3 e 4. Os mesmos continham explicações breves e elementos visando facilitar a explicação do instrutor e o entendimento dos alunos em relação aos conhecimentos ensinados. Também foram elaboradas peças detalhadas para prática dos alunos no Solid Edge.
+\begin{figure}[H]
+\centering
+
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Imagens/Slide - Montagem.png}
+    \caption{Slide - Montagem}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Imagens/Peça.png}
+    \caption{Peça - Prática de modelagem}
+\end{minipage}
+
+\vspace{2.0cm}
+
+\begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Imagens/Aula 30_05 - 1.jpeg}
+        \caption{Aula 30/05}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Imagens/Aula 30_05 - 2.jpeg}
+        \caption{Aula 30/05}
+\end{minipage}
+\end{figure}
+
+\section{Atualização com o Parceiro}
+O contato com os parceiros ocorreram no decorrer das semanas no grupo do WhatsApp e na aula do dia 30/05. Nessas interações foram repassadas orientações, avisos, e propriamente o conteúdo nos períodos de aulas. Vale ressaltar que a quarta aula do curso foi postergada para o dia 13/06.
+
+\section{Participação do Calouro}
+Durante o encontro presencial do dia 30/05, dois dos calouros, Isaac e Otávio, atuaram como instrutores ministraram o decorrer da aula. Paralelamente aos encontros presenciais em si, os calouros auxiliaram no desenvolvimento dos materiais e organização dos conteúdos para os alunos.
+
+\section{Impedimentos e Desvios}
+O grande impedimento em relação a essa Sprint foi a expiração repentina das licenças do Solid Edge que impossibilitou os alunos de acessarem o software no dia 30/05, entretanto, o grupo decidiu prosseguir com a aula e os conteúdos programados.
+
+Ademais a isto, problemas pessoais e de saúde impossibilitaram o SM, que seria responsável pelo treinamento nas ferramentas de impressão 3D, de realizar o treinamento. 
+
+\section{Retrospectiva}
+\subsection*{O que funcionou bem}
+Mesmo com os impedimentos apresentados do dia 30/05, os alunos se mostraram engajados e sem muitas dificuldades ou dúvidas em relação aos conteúdos lessionados.
+
+\subsection*{O que precisa melhorar}
+A organização das próximas etapas precisa ser precisa e bem executada para evitar atrasos e entregas vagas.
+
+\subsection*{Ação concreta para a próxima sprint}
+Realizar o treinamento da equipe na impressão 3D o mais breve possível e garantir que todas as ferramentas pertinentes ao andamento do curso estejam funcionando de forma adequada.
+
+\section{Planejamento da Próxima Sprint}
+Na Sprint 4 a equipe dará prosseguimento com as aulas 4 e 5 do minicurso e com a preparação dos materiais adequados para ministrar as mesmas. Além disso, os membros do grupo tem como objetivo primordial verificar os processos operacionais para manejo das impressoras 3D e posterior capacitação dos calouros.
+
+Nesta Sprint, será feito o contato com a professora Michele para garantir a emissão dos certificados para os alunos, que deverão ser disponibilizados na sexta aula.
+\end{document}
