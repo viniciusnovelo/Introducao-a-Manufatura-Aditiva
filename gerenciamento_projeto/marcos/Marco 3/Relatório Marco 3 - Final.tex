@@ -1,0 +1,180 @@
+\documentclass[12pt,a4paper]{article}
+
+% Codificação e idioma
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+% Pacotes úteis
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+
+\newcommand{\gitcommit}{} % hash do commit desta entrega
+
+\begin{document}
+
+\begin{center}
+    % Nome da Instituição (Letras maiúsculas, negrito, centralizado)
+    \large\textbf{INSTITUTO FEDERAL DE CIÊNCIA E TECNOLOGIA DE MINAS GERAIS} \\
+    \large\textbf{CAMPUS BETIM} \\
+    
+    \vspace{4cm} % Espaçamento vertical
+    
+    % Nome do Autor (Letras maiúsculas, negrito, centralizado)
+    \large\textbf{LEONARDO OLIVEIRA SANTOS} \\
+    \large\textbf{LUCAS FERREIRA LEÃO} \\
+    \large\textbf{LUCAS MOURA} \\
+    \large\textbf{PAULO ARTHUR TORRES} \\
+    \large\textbf{VINÍCIUS VILELA NOVELO} \\
+    \large\textbf{YURI PEREIRA MENDONÇA} \\
+
+    
+    \vspace{5cm}
+    
+    % Título do Trabalho (Principal em maiúsculas e negrito)
+    \LARGE\textbf{INTRODUÇÃO À MANUFATURA ADITIVA} \\
+    
+    \vfill % Empurra o resto do conteúdo para o final da página
+    
+    % Local e Ano (Letras maiúsculas, negrito)
+    \large\textbf{BETIM} \\
+    \large\textbf{2026}
+\end{center}
+
+\newpage % Quebra de página para iniciar a Folha de Rosto
+
+\capafalse % Evita duplicação caso use contracapa
+\imprimircapa % Comando para gerar a capa
+
+\footnote{hash: \gitcommit}
+
+\section{Resumo}
+Este relatório apresenta os resultados do projeto de extensão Manufatura Aditiva com Modelagem 3D que foi estruturado na forma de um minicurso, voltado para alunos de escolas públicas e a comunidade de Betim. Frente ao problema da escassez de capacitação técnica acessível em tecnologias industriais emergentes, a solução proposta consistiu na elaboração e execução de um treinamento prático e teórico básico. A metodologia adotada estratificou as ações da extensão em cinco Sprints de desenvolvimento. Os resultados evidenciaram um expressivo engajamento da comunidade externa, registrando 63 inscrições para um limite físico de 30 vagas laboratoriais, culminando em uma taxa de assiduidade de 90\% entre os alunos frequentes. O impacto de extensão consolidou a transferência de conhecimento tecnológico básico e a aproximação comunitária com a instituição de ensino. Ademais, o projeto promoveu a inclusão ativa e formação de quatro alunos calouros do curso de Engenharia de Controle e Automação, os quais desenvolveram competências técnicas de modelagem geométrica e docência aplicada.
+
+\section{Introdução}
+O advento da Indústria 4.0 transformou os paradigmas produtivos globais, posicionando a manufatura aditiva (impressão 3D) e os sistemas de desenho auxiliado por computador (CAD) como pilares fundamentais para a prototipagem rápida e desenvolvimento de produtos inovadores. No entanto, o acesso a tais ferramentas e ao conhecimento técnico especializado permanece restrito, criando um abismo tecnológico entre os estudantes da rede pública de ensino e as demandas reais do setor produtivo e acadêmico.
+
+O problema abordado por este projeto de extensão está na falta de oportunidades de capacitação tecnológica de nível técnico e gratuito para a comunidade local, o que limita as perspectivas de inserção profissional na área. A justificativa para a realização deste minicurso está pautada no papel social do Instituto Federal de Minas Gerais (IFMG) como vetor de democratização científica e tecnológica, utilizando sua infraestrutura de ponta e capital intelectual para qualificar o público externo.
+
+Os objetivos do projeto configuram-se em: desenvolver e ministrar um minicurso de manufatura aditiva com modelagem 3D para 30 alunos selecionados da comunidade externa, elaborar materiais didáticos de suporte, incluindo apostilas especializadas e apresentações visuais e validar uma metodologia de gestão ágil para a condução de projetos de extensão educacionais.
+
+\section{Referencial Teórico}
+\subsection{A Indústria 4.0 e a Manufatura Aditiva}
+A Quarta Revolução Industrial, ou Indústria 4.0, caracteriza-se pela fusão de tecnologias físicas, digitais e biológicas, transformando profundamente as cadeias globais de suprimentos e os métodos de manufatura (SCHWAB, 2016). Entre os pilares fundamentais dessa transição está a manufatura aditiva — popularmente conhecida como impressão 3D —, um processo de fabricação que consiste na sobreposição sucessiva de camadas de material a partir de um modelo digital tridimensional.
+
+Diferente dos métodos tradicionais (como a usinagem), a manufatura aditiva por modelagem minimiza drasticamente o desperdício de matéria-prima e permite a flexibilização do design, viabilizando a produção de geometrias complexas e canais internos funcionais. O domínio dessa tecnologia engloba várias competências, desde a interpretação geométrica a parametrização de dispositivos de impressão e o controle de variáveis térmicas de polímeros.
+
+\subsection{Metodologias Ágeis e o Framework Scrum}
+Historicamente concebidas para o desenvolvimento de softwares, as metodologias ágeis expandiram seu escopo para a gestão de projetos complexos em múltiplos setores, incluindo o educacional e o acadêmico. O framework Scrum destaca-se por sua abordagem iterativa, estruturando o ciclo de vida do projeto em ciclos de tempo fixados chamados de Sprints (SCHWABER; BEEDLE, 2002).
+
+A aplicação do Scrum em projetos de extensão oferece uma resposta dinâmica de prazos, riscos e competências da equipe. O uso de papéis claros (como o Scrum Master), artefatos transparentes (quadros Kanban e métricas de Velocity) e planejamento por Sprints permite ao grupo monitorar o esforço planejado e assegurar que gargalos críticos sejam mitigados por planos de contingência.
+
+\subsection{A Extensão Universitária e a Formação Acadêmica de Engenharia}
+A extensão universitária, funciona como uma ponte bidirecional entre a instituição acadêmica e a sociedade. Segundo as diretrizes nacionais vigentes, as ações extensionistas devem obrigatoriamente promover o impacto social, a interdisciplinaridade, a indissociabilidade teórica e a transformação da comunidade externa (CAMPOS, 2020).
+
+\section{Metodologia}
+O projeto foi conduzido por meio de uma abordagem que fundiu os preceitos regulamentares das ações de extensão universitária com as práticas de engenharia de software e gerenciamento do framework Scrum adaptado. A equipe organizou-se definindo o papel de Scrum Master (SM) exercido por Lucas Moura, enquanto os demais membros compuseram o time de desenvolvimento e docência. O ciclo de vida do projeto foi dividido em cinco Sprints consecutivas de duas semanas cada, sendo elas:
+
+\subsection{Sprint 1 (27/04 a 10/05/2026)}
+Focada na infraestrutura, divulgação e planejamento macro. Criou-se o perfil de divulgação institucional no Instagram, o formulário digital via Google Forms para captação de dados das inscrições e a estruturação do quadro Kanban. Realizou-se a verificação estrutural de hardware e software das impressoras 3D presentes no laboratório de automação do campus Betim, além do agendamento oficial das salas e capacitação preliminar da equipe em modelagem com o software Solid Edge.
+
+\subsection{Sprint 2 (11/05 a 24/05/2026)}
+Dedicada à elaboração dos materiais didáticos dos primeiros blocos e à execução das primeiras aulas teórica-práticas. Foram construídos os slides de "Alfabetização Visual em Desenho Técnico Industrial" e aplicadas com sucesso as Aulas 1 e 2 nos dias 16/05 e 23/05. Estabeleceu-se o repositório oficial no GitHub para versionamento de artefatos.
+
+\subsection{Sprint 3 (25/05 a 07/06/2026)}
+Produção de material didático avançado e realização da Aula 3 (30/05) abordando o "Guia Mestre de Montagem no Solid Edge". Nesta Sprint, enfrentou-se o impedimento crítico de expiração repentina de licenças comerciais no servidor, motivando alterações no planejamento e a postergação da Aula 4 para mitigar impactos decorrentes do feriado prolongado de Corpus Christi.
+
+\subsection{Sprint 4 (08/06 a 21/06/2026)}
+Execução contínua das Aulas 4 e 5. Consolidação de atividades práticas focadas em modelagem avançada (comandos de revolução, furos e cortes) e introdução conceitual rigorosa aos parâmetros do software fatiador XYZware Pro. Conclusão do manual de impressão e tabelas paramétricas de filamentos plásticos.
+
+\subsection{Sprint 5 (22/06 a 05/07/2026)}
+Encerramento prático com a execução da Aula 6 (27/06), englobando calibração mecânica de hardware, manufatura das peças modelo físicas e distribuição de peças comemorativas (lembrancinhas) aos discentes. Processamento da emissão e entrega dos certificados institucionais em conjunto com a coordenação.
+
+\section{Desenvolvimento e Resultados}
+A solução técnica implementada consistiu na formulação de uma trilha de aprendizagem sequencial unindo modelagem virtual bidimensional/tridimensional e manufatura aditiva material. O software Solid Edge foi empregado para instruir os discentes nos conceitos de geometria construtiva sólida (CSG). As aulas iniciais cobriram o desenho de perfis 2D (sketches), restrições geométricas, seguidos pelas operações de extrusão e corte volumétrico.
+
+No âmbito da manufatura aditiva, detalhou-se o fluxo de trabalho desde o arquivo nativo CAD, passando pela exportação em formato padrão (.stl), até o fatiamento no software XYZware Pro. Foram abordadas as principais variáveis do processo térmico de modelagem por fusão e deposição (FDM), cujas especificações técnicas consolidadas pela equipe para os filamentos disponíveis encontram-se tabeladas a seguir:
+
+\section{Resumo}
+
+\begin{longtable}{|p{3.2cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|p{3.5cm}|}
+\toprule
+Tipo de Filamento & Temperatura do Bico (Extrusor) & Temperatura da Mesa (Plataforma) & Densidade do Preenchimento & Padrão de Preenchimento \\
+\midrule
+PLA	(Ácido Polilático) & 190°C — 210°C & Mesa Desligada ou 45°C — 60°C & 15\% — 20\% & Colmeia (Honeycomb) / Reticular \\ \hline
+
+ABS	(Acrilonitrila Butadieno Estireno) & 230°C — 250°C & 90°C — 110°C & 20\% & Colmeia (Honeycomb) \\ \hline
+
+PETG (Polietileno Tereftalato de Glicol) & 220°C — 240°C & 70°C — 85°C & 15\% — 20\% & Giroide / Colmeia \\ \hline
+
+\bottomrule
+\end{longtable}
+
+Para as operações físicas na impressora 3D da marca XYZprinting, os alunos executaram o protocolo de calibração manual.
+
+Os artefatos produzidos incluíram peças mecânicas funcionais dotadas de canais internos revolvidos e furos roscados normatizados, além de chaveiros institucionais distribuídos como elementos de validação final.
+
+\section{Impacto de Extensão}
+O projeto manifestou um expressivo impacto social na comunidade de Betim. Na etapa inicial de mobilização pública, o formulário de inscrições contabilizou um total de 63 cidadãos interessados. Em decorrência do limite físico do laboratório, fixado em 30 computadores funcionais, realizou-se um processo seletivo priorizando alunos provenientes da rede pública de ensino médio. O índice de engajamento final para o curso de extensão apresentou frequência ativa de 40\% do público alvo selecionado até o encerramento do cronograma.
+
+\section{Inclusão e Formação}
+Quatro calouros da Engenharia de Controle e Automação integraram organicamente o time de desenvolvimento: Isaque Victor, Otávio Silva, Camilla e Mateus. A estratégia de acolhimento baseou-se na mentoria em pares, auxiliando a progressão dos calouros.
+
+Durante as Sprints 1 e 2, os calouros passaram por um treinamento de modelagem conduzido pelos veteranos, progredindo para a coautoria da "Apostila do Curso de Modelagem 3D com Solid Edge". A partir da Sprint 2, os ingressantes assumiram autonomia como docentes nas aulas presenciais, conduzindo a exposição de conteúdos teóricos e o suporte individual em bancada para os alunos externos. Esse processo consolidou o desenvolvimento de habilidades diversas, como oratória, liderança e gestão do tempo.
+
+\section{Análise do Processo Ágil}
+A aplicação do framework ágil possibilitou a mensuração contínua do esforço produtivo da equipe. O indicador de velocidade consolidado (Velocity) apontou flutuações associadas aos desafios técnicos e operacionais de cada ciclo de desenvolvimento.
+
+\begin{longtable}{|p{3.5cm}|p{1.9cm}|p{1.9cm}|p{1.9cm}|p{1.9cm}|p{1.9cm}|}
+\toprule
+Métrica Ágil / Progresso & Sprint 1 & Sprint 2 & Sprint 3 & Sprint 4 & Sprint 5 \\
+\midrule
+Esforço Planejado (Story Points) & 14 & 38 & 36 & 45 & 40 \\ \hline
+
+Esforço Concluído (Velocity Efetiva) & 14 & 38 & 26 & 45 & 40 \\ \hline
+
+\bottomrule
+\end{longtable}
+
+ A análise das retrospectivas periódicas revelou pontos de mutação na maturidade do time. Na Sprint 1, identificou-se lentidão no trabalho, corrigida na Sprint 2 com a introdução de critérios de aceitação rigorosos e alinhamentos frequentes. O maior desafio manifestou-se na Sprint 3, quando o limite de licenças simultâneas do servidor bloqueou o acesso de computadores do laboratório a partir do 14° usuário ativo. Como ação de contingência imediata, utilizou-se notebooks particulares com licenças estudantis, e para as Sprints subsequentes estabeleceu-se uma ponte técnica permanente com o setor de TI do campus, normalizando as licenças.
+ 
+As lições aprendidas indicam que projetos de extensão baseados em infraestrutura de TI demandam auditoria de licenças de software com redundância local e o framework Scrum confere excelente responsividade para mitigar riscos.
+
+\section{Conclusão}
+Os objetivos estabelecidos para a ação de extensão foram completamente atingidos. Conseguiu-se transferir conhecimentos práticos avançados sobre tecnologia 3D para um grupo variável de estudantes da comunidade externa, resultando na confecção física e bem-sucedida de modelos tridimensionais complexos e emitindo certificação institucional reconhecida. A integração horizontal de calouros provou-se uma ferramenta pedagógica eficaz na retenção e desenvolvimento técnico acelerado na Engenharia.
+
+As limitações enfrentadas concentraram-se na instabilidade temporária de infraestrutura de software e na restrição de insumos físicos (baixo estoque de filamentos de impressão na fase inicial, o que demandou racionalização do material). Como propostas de trabalhos futuros, recomenda-se a expansão do escopo do minicurso para abranger técnicas de digitalização tridimensional (escaneamento 3D) e modelamento 2D focado em cortes e programação CNC.
+
+\begin{figure}[H]
+\centering
+
+\begin{minipage}{0.41\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Imagens/Lembrancinha.jpeg}
+    \caption{Lembrancinha}
+\end{minipage}
+\hfill
+\begin{minipage}{0.55\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Imagens/Registro final.jpeg}
+        \caption{Registro Final}
+\end{minipage}
+
+\end{figure}
+
+\section{Referências}
+VOLPATO, Neri. Manufatura Aditiva: tecnologias e aplicações da impressão 3D. 1. ed. São Paulo: Blucher, 2017. 
+
+SCHWAB, Klaus. A Quarta Revolução Industrial. 1. ed. São Paulo: Edipro, 2016.
+
+SCHWABER, Ken; BEEDLE, Mike. Agile Software Development with Scrum. 1. ed. Upper Saddle River: Prentice Hall, 2002.
+
+SIEMENS SOFTWARE. Solid Edge User Guide and Geometric Modeling Principles. Plano: Siemens Digital Industries Software, 2024.
+\end{document}
